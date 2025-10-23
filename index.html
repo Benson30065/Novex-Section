@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Novex Bots — Powered by DevSatvak</title>
+  <meta name="description" content="Custom Discord bots for good and active servers." />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+      <h1>Novex Bots</h1>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="btn primary">Request a bot</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h2>Custom bots for good and active servers</h2>
+        <p>Built by DevSatvak. Reliable, scalable, and tailored to your community.</p>
+        <a href="#contact" class="btn primary">Get started</a>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="wrap">
+        <h3>Why Novex</h3>
+        <div id="featureList" class="grid"></div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section alt">
+      <div class="wrap">
+        <h3>Pricing</h3>
+        <div class="grid">
+          <div class="card">
+            <h4>Starter</h4>
+            <p>Basic moderation + utility</p>
+            <p class="price">Cheap Robux</p>
+          </div>
+          <div class="card featured">
+            <h4>Pro</h4>
+            <p>Custom commands, databases, dashboards</p>
+            <p class="price">Affordable Robux</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="wrap">
+        <h3>Request a bot</h3>
+        <form id="inquiryForm" class="form">
+          <label>Discord handle
+            <input type="text" name="discord" placeholder="@DevSatvak" required />
+          </label>
+          <label>Server size
+            <select name="size">
+              <option value="under1k">Under 1K</option>
+              <option value="1k-5k">1K–5K</option>
+              <option value="5k-20k">5K–20K</option>
+              <option value="20k-plus">20K+</option>
+            </select>
+          </label>
+          <label>Needs
+            <textarea name="needs" placeholder="Moderation, economy, tickets, logs..." rows="4"></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send inquiry</button>
+          <p id="formStatus" class="muted"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>© Novex Bots — Built by DevSatvak</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
